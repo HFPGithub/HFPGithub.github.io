@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <h1>Form elements should have a visible label</h1>
+			<label>Implicit Form Label<input type="text"/></label>
+			<div>
+				<label for="explicit">Explicit Form Label</label>
+				<input type="text" id="explicit"/>
+			</div>
+			<div><input type="text" title="title attribute"/></div>
+			<div><input type="text" aria-label="aria label"/></div>
+			<div id="label">Label to Reference</div>
+			<div><input type="text" aria-labelledby="label"/></div>
+			<div><input type="text" aria-describedby="label"/></div> </body>
+</html>

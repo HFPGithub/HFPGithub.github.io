@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		<h1>Form elements must have labels</h1>
+		<input class="Fail" id="no-alt" type="image" src="http://goo.gl/DN1yRL">
+		<input class="Pass" id="alt" type="image" src="http://goo.gl/DN1yRL" alt="Red Dot">
+		<input class="Fail" id="null-alt" type="image" src="http://goo.gl/DN1yRL" alt="">
+		<input class="Fail" id="no-alt-title" type="image" src="http://goo.gl/DN1yRL" title="Red Dot">
+		<input class="Pass" id="aria-label" type="image" src="http://goo.gl/DN1yRL" aria-label="Red Dot">
+		<input class="Pass" id="aria-labelledby" type="image" src="http://goo.gl/DN1yRL" aria-labelledby="ref">
+		<p id="ref">Red Dot</p>
+
+</body>
+</html>

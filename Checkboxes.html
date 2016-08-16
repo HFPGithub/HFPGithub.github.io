@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		<h1>Checkbox inputs with the same name attribute value must be part of a group</h1>
+		<fieldset>
+			<legend>What kind of food do you like?</legend>
+			<input id="italian" type="checkbox" name="FieldsetLegend">
+			<label for="italian">Italian</label>
+			<input id="mexican" type="checkbox" name="FieldsetLegend">
+			<label for="mexican">Mexican</label>
+			<input id="american" type="checkbox" name="FieldsetLegend">
+			<label for="american">American</label>
+		</fieldset>
+		
+		<fieldset>
+			<input id="italian1" type="checkbox" name="NoLegend">
+			<label for="italian1">Italian</label>
+			<input id="mexican1" type="checkbox" name="NoLegend">
+			<label for="mexican1">Mexican</label>
+			<input id="american1" type="checkbox" name="NoLegend">
+			<label for="american1">American</label>
+		</fieldset>
+		
+		<legend>What kind of food do you like?</legend>
+		<input id="italian2" type="checkbox" name="LegendNoFieldset">
+		<label for="italian2">Italian</label>
+		<input id="mexican2" type="checkbox" name="LegendNoFieldset">
+		<label for="mexican2">Mexican</label>
+		<input id="american2" type="checkbox" name="LegendNoFieldset">
+		<label for="american2">American</label>
+		
+		<p id="AL">What kind of food do you like?</p>
+		<input id="italian3" type="checkbox" name="aria-labelledby" aria-labelledby="AL">
+		<label for="italian3">Italian</label>
+		<input id="mexican3" type="checkbox" name="LegendNoFieldset" aria-labelledby="AL">
+		<label for="mexican3">Mexican</label>
+		<input id="american3" type="checkbox" name="LegendNoFieldset" aria-labelledby="AL">
+		<label for="american3">American</label>
+ </body>
+</html>

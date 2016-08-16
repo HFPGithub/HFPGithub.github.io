@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		<h1>Form elements must have labels</h1>
+		<div>
+			<label>Implicit Label Textbox
+				<input type="text">
+			</label>
+		</div>
+		<div style="padding-top:5px;">
+			<label for="explicit">Explicit Label Textbox</label>
+			<input id="explicit" type="text">
+		</div>
+		<div style="padding-top:5px;">
+			<input type="text" title="Titled Textbox">
+		</div>
+		<div style="padding-top:5px;">
+			<input type="text" aria-label="Aria-Label Textbox">
+		</div>
+		<div style="padding-top:5px;">
+			<p id="AL">aria-labelledby Reference</p>
+			<input type="text" aria-labelledby="AL">
+		</div>
+		<div style="padding-top:5px;">
+			<label for="dup">Implicit Label Textbox</label>
+			<input type="text" id="dup">
+		</div>
+		<div style="padding-top:5px;">
+			<input type="text" aria-label="Aria-Label Textbox">
+		</div>
+		<input type="text">
+
+ </body>
+</html>

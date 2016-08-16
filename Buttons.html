@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	 <h1>Buttons must have discernible text </h1>
+			 <h2>HTML5 Buttons </h2>
+				 <button class="Fail" tabindex="0"> </button>
+				 <button class="Pass" tabindex="0">Button </button>
+				 <button class="Fail" value="" tabindex="0"> </button>
+				 <button class="Pass" value="" tabindex="0">Null Value Attribute </button>
+				 <button class="Fail" value="test" tabindex="0"> </button>
+				 <button class="Pass" aria-label=" " tabindex="0">Null ARIA Label </button>
+				 <button class="Fail" aria-label="" tabindex="0"> </button>
+			
+			 <h2>HTML4 Buttons </h2>
+				 <input class="Fail" type="button" tabindex="0" />
+				 <input class="Fail" type="button" aria-label="" tabindex="0" />
+				 <input class="Pass" type="button" aria-label=" " value="test" tabindex="0" />
+				 <input class="Pass" type="button" value="Button" tabindex="0" />
+				 <input class="Fail" type="button" value="" tabindex="0" />
+				 <input class="Pass" type="button" value="Button" aria-label=" " tabindex="0" />
+				 <input class="Pass" type="button" value="" aria-label="Button" tabindex="0" />
+				
+			 <h2>ARIA Buttons </h2>
+				 <div class="Fail" style="height:15px; width:15px; background:black; display:inline-block;" role="button" tabindex="0"> </div>
+				 <div class="Fail" style="height:15px; width:15px; background:black; display:inline-block;" role="button" aria-label="" tabindex="0"> </div>
+				 <div class="Fail" style="height:15px; width:15px; background:black; display:inline-block;" role="button" aria-label="" value="test" tabindex="0"> </div>
+				 <div class="Fail" style="height:15px; width:15px; background:black; display:inline-block;" role="button" value="Button" tabindex="0"> </div>
+				 <div class="Fail" style="height:15px; width:15px; background:black; display:inline-block;" role="button" value="" tabindex="0"> </div>
+				 <div class="Fail" style="height:15px; width:15px; background:black; display:inline-block;" role="button" value="Button" aria-label="" tabindex="0"> </div>
+				 <div class="Pass" style="height:15px; width:15px; background:black; display:inline-block;" role="button" value="" aria-label="Button" tabindex="0"> </div>
+</html>
